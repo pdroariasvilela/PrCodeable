@@ -69,6 +69,7 @@ if(eleccion == 3){
 
 }
 
+//actualizar
 
 
 
