@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proX</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>proCodeable</title>
+        <link rel="stylesheet" href="/codeable/css/style.css">
+        <script src="/codeable/index2.js"></script>
 </head>
 <body>
     <div class="notas">
         <div class="notas__container">
 
             <div class="notas__welcome">
-                <h1 class="notas__title">
-                    Welcome to Notes
-                </h1>
+                <h1 class="notas__title">Welcome to Notes</h1>
             </div>
 
         </div>
 
         <div class="notas__container">
             
-            <div class="notas__texto">
-                <textarea class="notas__cuadro" placeholder="Things to remember..."></textarea>
-                
-                <button class="notas__create">Create</button>
-            </div>
+            <form class="notas__texto" >
+                <textarea class="notas__cuadro" placeholder="Things to remember..." id="texto-escrito"></textarea>
+                <button class="notas__create" id="buton-sonido">Create</button>
+            </form>
 
         </div>
+        
+        
+        <!-- <div class="notas__container">
+            <a href="#" class="notas__create">Create</a>
+        </div> -->
 
         
         
@@ -35,23 +38,23 @@
             <div class="notas__view">
 
                 <div class="notas__edit">
-                    <p class="notas__paragraph">Note 1</p>
-
+                    
+                    <div class="notas__paragraph"> Nota 1</div>
                     <div class="notas__delete">
                         <button class="delete__item">Delete</button>
                     </div>
                 </div>
-    
                 <div class="notas__edit">
-                    <p class="notas__paragraph">Note 2</p>
+                    
+                    <div class="notas__paragraph">Nota 2</div>
 
                     <div class="notas__delete">
                         <button class="delete__item">Delete</button>
                     </div>
                 </div>
-    
                 <div class="notas__edit">
-                    <p class="notas__paragraph">Note 3</p>
+                    
+                    <div class="notas__paragraph">Note 3</div>
 
                     <div class="notas__delete">
                         <button class="delete__item">Delete</button>
@@ -59,20 +62,21 @@
                 </div>
 
                 <div class="notas__edit">
-                    <p class="notas__paragraph">Note 4</p>
+                    
+                    <div class="notas__paragraph">Note 4</div>
 
                     <div class="notas__delete">
                         <button class="delete__item">Delete</button>
                     </div>
                 </div>
+
+                
 
             </div>
         </div>
 
-    
-
-
-
 </body>
+
 </html>
-<!-- <script src="index.js"></script> -->
+
+<button></button>

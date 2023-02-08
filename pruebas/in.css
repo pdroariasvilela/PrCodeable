@@ -1,0 +1,11 @@
+#contenedor {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    border: 1px solid black;
+    
+}
+#miCaja {
+    flex: 1;
+}

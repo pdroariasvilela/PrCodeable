@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 *{
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
+
 .notas{
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: auto;
     background: #f0f0f0;
 }
 
+
 .notas__container{
+    width: 100%;
+    /* padding: 20px; */
     display: flex;
     justify-content: center;
-
 }
 
 .notas__title{
@@ -25,13 +31,14 @@
 
 .notas__paragraph{
     font-size: 1.5rem;
+    flex: 1;
 }
 
 .notas__cuadro{
     display: flex;
     /* resize: none; */
     width: 350px;
-    height: 120px;
+    /* height: 120px; */
     justify-content: center;
     border: 2px solid black;
     border-radius: 16px;
@@ -39,37 +46,35 @@
     padding: 15px;
     font-size: 1.5rem;
     color: #b0acac;
-    
+     
 }
 
 .notas__create{
-    justify-content: center;
-    /*  */
+    margin-top: 20px;
     padding: 10px 130px;
-    margin: 10px;
     border-radius: 15px;
     background-color: #4F4F4F;
     color: #f0f0f0;
     font-size: 1.5rem;
     border: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .notas__view{ 
+    /* border: 1px solid red; */
+    width:1000px;
     justify-content: center;
-    width: 50%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;   
-    grid-template-columns: repeat(2,1fr) ;
 }
 
 .notas__edit{
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-    grid-template-rows: repeat(3 ,1fr);
-    width: 300px;
-    height: 120px;
+    flex-direction: column;
+    display: flex;
+    max-width: 350px;
+    min-width: 350px;
     border: 2px solid black;
     border-radius: 20px ;
     margin: 15px;
@@ -78,22 +83,22 @@
 }
 
 .notas__delete{
-    /* border: 1px solid red; */
-    grid-column: 3/4;
-    grid-row: 3/4;
-    display: flex;
-    justify-content: center;
-}
-.delete__item{
+    margin-top: 50px;
     width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: right;
+}
+
+.delete__item{
+    padding: 11px 10px;
     color: black;
-    border-radius: 10px;
-    grid-column: 4/-1;
+    border-radius: 40px;
     box-shadow: none;
     font-size: 1rem;
     color: #4F4F4F;
-    border-radius: 30px;
     border: none;
     font-weight: bold;
+    justify-content: flex-end ;
 }
 

@@ -58,7 +58,6 @@ while(true){
   } else if(eleccion == 3){
      i = prompt('Que nota desea eliminar')
      eliminarNota(i)
-     console.log(cantidadNotas())
 
   }else if (eleccion === null) {
     console.log("Gracias por usar Notas");
